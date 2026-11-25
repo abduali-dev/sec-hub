@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="SecHub — независимый справочник по Linux, сетям, OSINT и кибербезопасности. Инструменты, учебные лаборатории и официальные загрузки.">
+  <meta property="og:title" content="SecHub — изучай системы, понимай безопасность">
+  <meta property="og:description" content="Инструменты, учебные лаборатории и официальные источники для изучения кибербезопасности.">
+  <meta property="og:type" content="website">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; media-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <title>SecHub Noir — пространство для изучения безопасности</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-row">
+      <a class="wordmark" href="#top" data-view-target="home" aria-label="SecHub — на главную">
+        <img src="./assets/mark.svg" width="32" height="32" alt="">
+        <span>SECHUB</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <button class="nav-view" type="button" data-view-target="directory">Каталог</button>
+        <button class="nav-view" type="button" data-view-target="lab">Инструменты</button>
+        <button class="nav-view" type="button" data-view-target="principles">Правила</button>
+      </nav>
+      <a class="header-link" href="https://www.tiktok.com/@abduforce_gentoolinux" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Автор <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro wrap view-panel" id="view-home" data-view-panel="home" role="tabpanel" aria-labelledby="tab-home">
+      <div class="intro-kicker"><span class="kicker-line"></span> НЕЗАВИСИМЫЙ СПРАВОЧНИК <span class="intro-year">/ 2026</span></div>
+      <div class="intro-layout">
+        <div class="intro-main">
+          <div class="hero-overline"><span class="status-pulse" aria-hidden="true"></span> DIGITAL SECURITY / OPEN KNOWLEDGE</div>
+          <h1 id="main-title">Изучай системы.<br><em>Понимай безопасность.</em></h1>
+          <p class="intro-text">Твоя отправная точка в мире Linux, сетей и кибербезопасности. Инструменты, проверенные учебные площадки и официальные источники — собраны в одном месте.</p>
+          <div class="hero-stats" aria-label="Содержание каталога">
+            <div class="hero-stat"><strong id="resource-total">44</strong><span>ресурса</span></div>
+            <div class="hero-stat"><strong>07</strong><span>направлений</span></div>
+            <div class="hero-stat"><strong>100%</strong><span>статический сайт</span></div>
+          </div>
+          <div class="intro-actions">
+            <a class="button button-light" href="#directory" data-view-target="directory">Открыть каталог <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#principles" data-view-target="principles">Принципы проекта <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote"><span>НЕЗАВИСИМЫЙ ПРОЕКТ</span><span>БЕЗ РЕКЛАМЫ · БЕЗ ТРЕКЕРОВ</span></div>
+        </div>
+
+        <aside class="hero-visual" aria-label="Робот SecHub — локальный визуальный помощник">
+          <div class="visual-topline"><span>SECHUB / FIELD UNIT 01</span><span class="visual-live"><i aria-hidden="true"></i> ONLINE</span></div>
+          <div class="robot-scene">
+            <span class="scene-orbit scene-orbit-one" aria-hidden="true"></span>
+            <span class="scene-orbit scene-orbit-two" aria-hidden="true"></span>
+            <span class="scene-cross scene-cross-one" aria-hidden="true">＋</span>
+            <span class="scene-cross scene-cross-two" aria-hidden="true">＋</span>
+            <span class="scene-coordinate scene-coordinate-one" aria-hidden="true">51°30′ N</span>
+            <span class="scene-coordinate scene-coordinate-two" aria-hidden="true">LOCAL / 01</span>
+            <div class="robot-stage">
+              <svg class="cursor-robot" id="cursor-robot" viewBox="0 0 180 150" role="img" aria-labelledby="robot-title robot-desc">
+                <title id="robot-title">Робот SecHub</title>
+                <desc id="robot-desc">Робот мягко поворачивает голову и глаза вслед за указателем, пока открыт главный экран. Камера и микрофон не используются.</desc>
+                <g class="robot-shadow"><ellipse cx="90" cy="137" rx="48" ry="7"/></g>
+                <g class="robot-body">
+                  <path d="M61 101v11c0 7 6 12 13 12h32c7 0 13-5 13-12v-11" class="robot-body-shell"/>
+                  <rect x="72" y="116" width="36" height="10" rx="5" class="robot-neck"/>
+                  <path d="M58 112h-9v12h9m64-12h9v12h-9" class="robot-limbs"/>
+                </g>
+                <g class="robot-head" id="robot-head">
+                  <path d="M90 17v-8m-5 0h10" class="robot-antenna"/>
+                  <circle cx="90" cy="8" r="3.4" class="robot-antenna-dot"/>
+                  <rect x="34" y="18" width="112" height="86" rx="27" class="robot-face"/>
+                  <path d="M34 48h-8v26h8m112-26h8v26h-8" class="robot-ear"/>
+                  <g class="robot-eyes">
+                    <ellipse cx="66" cy="58" rx="12" ry="15" class="robot-eye"/>
+                    <ellipse cx="114" cy="58" rx="12" ry="15" class="robot-eye"/>
+                    <g id="robot-pupils">
+                      <circle cx="69" cy="60" r="5.2" class="robot-pupil"/>
+                      <circle cx="117" cy="60" r="5.2" class="robot-pupil"/>
+                      <circle cx="71" cy="58" r="1.5" class="robot-glint"/>
+                      <circle cx="119" cy="58" r="1.5" class="robot-glint"/>
+                    </g>
+                  </g>
+                  <path d="M78 83h24" class="robot-mouth"/>
+                  <path d="M45 32h90" class="robot-brow-line"/>
+                </g>
+                <path d="M80 132v5m20-5v5" class="robot-feet"/>
+              </svg>
+            </div>
+            <div class="scene-orbit-label"><span></span> POINTER TRACKING</div>
+          </div>
+          <div class="visual-footer"><span>ЛОКАЛЬНАЯ АНИМАЦИЯ</span><span>КАМЕРА НЕ ИСПОЛЬЗУЕТСЯ</span></div>
+        </aside>
+      </div>
+      <div class="intro-baseline"><span>LINUX <b>·</b> NETWORKS <b>·</b> OSINT <b>·</b> SECURITY</span><span>ОБУЧЕНИЕ В РАЗРЕШЁННЫХ СРЕДАХ</span></div>
+
+      <section class="home-portals" aria-labelledby="portal-title">
+        <div class="portal-heading">
+          <div><span class="section-kicker">НАВИГАЦИЯ / 01—04</span><h2 id="portal-title">Выбери своё <em>направление.</em></h2></div>
+          <p>Каждая карточка открывает отдельный раздел. Начни с того, что нужно именно сейчас.</p>
+        </div>
+        <div class="portal-grid">
+          <a class="glass-card glass-card-catalog" href="#directory" data-view-target="directory">
+            <div class="glass-card-top"><span>01 / DIRECTORY</span><span class="glass-card-arrow" aria-hidden="true">↗</span></div>
+            <div class="card-art art-catalog" aria-hidden="true"><span class="art-ring ring-a"></span><span class="art-ring ring-b"></span><span class="art-line line-a"></span><span class="art-line line-b"></span><span class="art-node node-a"></span><span class="art-node node-b"></span><span class="art-node node-c"></span></div>
+            <div class="glass-card-copy"><h3>Каталог ресурсов</h3><p>Сетевые инструменты, OSINT, анализ, Linux и другие системы.</p><span class="card-cta">Изучить каталог <b>↗</b></span></div>
+          </a>
+          <a class="glass-card glass-card-lab" href="#lab" data-view-target="lab">
+            <div class="glass-card-top"><span>02 / WORKBENCH</span><span class="glass-card-arrow" aria-hidden="true">↗</span></div>
+            <div class="card-art art-lab" aria-hidden="true"><span class="terminal-window"><i></i><i></i><i></i><b>_</b></span><span class="terminal-orbit"></span></div>
+            <div class="glass-card-copy"><h3>Мини-инструменты</h3><p>Локальные помощники для изучения паролей и структуры URL.</p><span class="card-cta">Открыть инструменты <b>↗</b></span></div>
+          </a>
+          <a class="glass-card glass-card-rules" href="#principles" data-view-target="principles">
+            <div class="glass-card-top"><span>03 / PRINCIPLES</span><span class="glass-card-arrow" aria-hidden="true">↗</span></div>
+            <div class="card-art art-rules" aria-hidden="true"><span class="shield-shape"><i></i></span><span class="shield-spark spark-a">✳</span><span class="shield-spark spark-b">＋</span></div>
+            <div class="glass-card-copy"><h3>Правила безопасности</h3><p>Ответственная практика, приватность и использование по разрешению.</p><span class="card-cta">Прочитать правила <b>↗</b></span></div>
+          </a>
+          <a class="glass-card glass-card-author" href="#author" data-view-target="author">
+            <div class="glass-card-top"><span>04 / ABOUT</span><span class="glass-card-arrow" aria-hidden="true">↗</span></div>
+            <div class="card-art art-author" aria-hidden="true"><span class="author-orbit author-orbit-a"></span><span class="author-orbit author-orbit-b"></span><span class="author-mark">A.</span><span class="author-star">✳</span></div>
+            <div class="glass-card-copy"><h3>Об авторе</h3><p>Кто собирает SecHub и где следить за развитием проекта.</p><span class="card-cta">Перейти к автору <b>↗</b></span></div>
+          </a>
+        </div>
+        <div class="portal-bottomline"><span>01—04 / РАЗДЕЛЫ SECHUB</span><span>ПРОСТРАНСТВО ДЛЯ ИЗУЧЕНИЯ И ПРАКТИКИ</span></div>
+      </section>
+    </section>
+
+    <section class="directory-section view-panel" id="directory" data-view-panel="directory" role="tabpanel" aria-labelledby="tab-directory">
+      <div class="wrap">
+        <div class="section-topline">
+          <div>
+            <span class="section-kicker">СПРАВОЧНИК</span>
+            <h2 id="directory-title">Каталог <span class="muted-slash">/</span> ресурсов</h2>
+          </div>
+          <p class="section-description">Каталог объединяет официальные сайты проектов, документацию и учебные площадки. Перед скачиванием сверяй домен и контрольные суммы.</p>
+        </div>
+
+        <div class="directory-toolbar">
+          <label class="search-field" for="resource-search">
+            <span class="search-symbol" aria-hidden="true">⌕</span>
+            <input id="resource-search" type="search" placeholder="Поиск по названию или назначению" autocomplete="off" spellcheck="false">
+            <kbd>/</kbd>
+          </label>
+          <div class="filter-list" role="group" aria-label="Фильтр ресурсов">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+            <button class="filter-button" type="button" data-filter="network" aria-pressed="false">Сети</button>
+            <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter-button" type="button" data-filter="osint" aria-pressed="false">OSINT</button>
+            <button class="filter-button" type="button" data-filter="analysis" aria-pressed="false">Анализ</button>
+            <button class="filter-button" type="button" data-filter="learning" aria-pressed="false">Обучение</button>
+            <button class="filter-button" type="button" data-filter="linux" aria-pressed="false">Linux</button>
+            <button class="filter-button" type="button" data-filter="other" aria-pressed="false">Другие ОС</button>
+          </div>
+        </div>
+
+        <div class="result-line" aria-live="polite">
+          <span>ПОКАЗАНО РЕСУРСОВ</span>
+          <strong id="visible-count">—</strong>
+          <button class="reset-search" id="reset-search" type="button">Сбросить фильтры</button>
+        </div>
+
+        <section class="catalog-section" id="tools">
+          <div class="group-heading"><span class="group-number">01</span><h3>Инструменты</h3><span class="group-caption">СЕТИ · WEB · OSINT · АНАЛИЗ</span></div>
+          <div class="resource-grid" id="tools-grid" aria-label="Сетевые, веб-, OSINT-инструменты и средства анализа"></div>
+        </section>
+
+        <section class="catalog-section" id="learning">
+          <div class="group-heading"><span class="group-number">02</span><h3>Учебные площадки</h3><span class="group-caption">ПРАКТИКА В КОНТРОЛИРУЕМОЙ СРЕДЕ</span></div>
+          <div class="resource-grid" id="learning-grid" aria-label="Учебные платформы"></div>
+        </section>
+
+        <section class="catalog-section" id="systems">
+          <div class="group-heading"><span class="group-number">03</span><h3>Операционные системы</h3><span class="group-caption">ОФИЦИАЛЬНЫЕ СТРАНИЦЫ ЗАГРУЗКИ</span></div>
+          <div class="resource-grid" id="systems-grid" aria-label="Операционные системы"></div>
+        </section>
+
+        <p class="empty-state" id="empty-state" hidden>Ничего не найдено. Измени запрос или сбрось фильтры.</p>
+        <p class="directory-footnote"><span aria-hidden="true">※</span> Каталог содержит внешние ресурсы, а не гарантии их безопасности. Проверяй домен, цифровые подписи и контрольные суммы. OSINT выполняй только законно, с уважением к приватности и без преследования людей.</p>
+      </div>
+    </section>
+
+    <section class="lab-section view-panel" id="lab" data-view-panel="lab" role="tabpanel" aria-labelledby="tab-lab">
+      <div class="wrap">
+        <div class="section-topline lab-topline">
+          <div><span class="section-kicker">РАБОТАЕТ ЛОКАЛЬНО</span><h2 id="lab-title">Мини-инструменты <span class="muted-slash">/</span></h2></div>
+          <p class="section-description">Небольшие помощники для обучения. Введённые значения обрабатываются только в этой вкладке: сайт не отправляет их на сервер.</p>
+        </div>
+        <div class="lab-grid">
+          <article class="utility-panel">
+            <div class="utility-meta"><span>01 / PASSWORD</span><span>ЛОКАЛЬНАЯ ОЦЕНКА</span></div>
+            <h3>Оценка пароля</h3>
+            <p class="utility-copy">Оценивает длину и разнообразие символов. Это простая эвристика, а не проверка утечек или гарантия стойкости.</p>
+            <label class="field-label" for="password-input">Вымышленный пример</label>
+            <div class="input-row">
+              <input id="password-input" type="password" maxlength="128" placeholder="Введи тестовую строку" autocomplete="off" spellcheck="false">
+              <button class="small-button" id="clear-password" type="button" aria-label="Очистить поле">Очистить</button>
+            </div>
+            <div class="strength-track" aria-hidden="true"><span id="strength-fill" class="strength-fill score-0"></span></div>
+            <div class="strength-result"><strong id="strength-label">Ожидание ввода</strong><span id="strength-score">—</span></div>
+            <p class="utility-feedback" id="password-feedback" aria-live="polite">Не используй настоящий пароль. Для проверки придумай отдельную строку.</p>
+            <p class="privacy-line">Локальная обработка · без сохранения · без передачи</p>
+          </article>
+
+          <article class="utility-panel">
+            <div class="utility-meta"><span>02 / URL</span><span>БЕЗ СЕТЕВОГО ЗАПРОСА</span></div>
+            <h3>Разбор ссылки</h3>
+            <p class="utility-copy">Показывает состав адреса. Не открывает сайт и не определяет его репутацию или безопасность.</p>
+            <label class="field-label" for="url-input">URL для анализа</label>
+            <div class="input-row url-row">
+              <input id="url-input" type="text" maxlength="2048" placeholder="https://example.com/path" autocomplete="off" spellcheck="false" inputmode="url">
+              <button class="small-button small-button-light" id="analyze-url" type="button">Разобрать</button>
+            </div>
+            <div class="url-output" id="url-output" aria-live="polite">
+              <p class="url-placeholder">Результат анализа появится здесь.</p>
+            </div>
+            <p class="privacy-line">URL не открывается · запросы не выполняются</p>
+          </article>
+        </div>
+        <p class="lab-disclaimer">Важно: не вставляй в поля настоящие пароли, приватные ссылки, токены или адреса с секретными параметрами.</p>
+      </div>
+    </section>
+
+    <section class="principles-section view-panel" id="principles" data-view-panel="principles" role="tabpanel" aria-labelledby="tab-principles">
+      <div class="wrap">
+        <div class="section-topline">
+          <div><span class="section-kicker">ПРИНЦИПЫ ПРОЕКТА</span><h2 id="principles-title">Правила <span class="muted-slash">/</span> SecHub</h2></div>
+          <p class="section-description">Изучение технологий требует дисциплины. Эти правила определяют, как использовать материалы каталога.</p>
+        </div>
+
+        <div class="principle-list">
+          <article class="principle"><span class="principle-number">01</span><div><h3>Работай только с разрешением</h3><p>Проверяй собственные устройства и сети либо системы, на тестирование которых у тебя есть явное разрешение владельца.</p></div></article>
+          <article class="principle"><span class="principle-number">02</span><div><h3>Выбирай учебные среды</h3><p>Для экспериментов используй CTF, sandbox, специально уязвимые приложения и лаборатории, предоставленные платформой.</p></div></article>
+          <article class="principle"><span class="principle-number">03</span><div><h3>Скачивай из первоисточников</h3><p>Проверяй домен, контрольные суммы и цифровые подписи, когда разработчик их публикует. Не запускай неизвестные файлы.</p></div></article>
+          <article class="principle"><span class="principle-number">04</span><div><h3>Не раскрывай секреты</h3><p>Не публикуй пароли, токены, ключи, личные данные и конфиденциальные файлы. Не вставляй их в сторонние онлайн-сервисы.</p></div></article>
+          <article class="principle"><span class="principle-number">05</span><div><h3>Не причиняй вред</h3><p>Не нарушай работу сервисов, не обходи ограничения доступа, не собирай чужие данные и не распространяй вредоносное ПО.</p></div></article>
+          <article class="principle"><span class="principle-number">06</span><div><h3>Учитывай закон и правила платформ</h3><p>Соблюдай применимое законодательство, условия использования ресурсов и границы полученного разрешения.</p></div></article>
+        </div>
+
+        <div class="disclaimer">
+          <span class="disclaimer-mark" aria-hidden="true">!</span>
+          <div><h3>Отказ от ответственности</h3><p>SecHub — независимый образовательный каталог. Он не является сервисом аудита, не гарантирует безопасность перечисленных программ и не контролирует содержимое внешних сайтов. Пользователь самостоятельно отвечает за свои действия, соблюдение законодательства и наличие разрешения на тестирование.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="author-section view-panel" id="author" data-view-panel="author" role="tabpanel" aria-labelledby="tab-author">
+      <div class="wrap author-row">
+        <div><span class="section-kicker">АВТОР ПРОЕКТА</span><h2 id="author-title">Собираю полезное<br>в одном месте.</h2><p>SecHub — личная подборка для изучения Linux, сетей, OSINT и кибербезопасности.</p></div>
+        <a class="tiktok-link" href="https://www.tiktok.com/@abduforce_gentoolinux" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"><span>TIKTOK</span><strong>@abduforce_gentoolinux</strong><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <nav class="floating-dock" aria-label="Разделы SecHub" role="tablist">
+    <button class="dock-tab is-active" type="button" role="tab" id="tab-home" aria-selected="true" aria-controls="view-home" data-view-target="home"><span class="dock-index">00</span><span>Главная</span></button>
+    <button class="dock-tab" type="button" role="tab" id="tab-directory" aria-selected="false" aria-controls="directory" data-view-target="directory" tabindex="-1"><span class="dock-index">01</span><span>Каталог</span></button>
+    <button class="dock-tab" type="button" role="tab" id="tab-lab" aria-selected="false" aria-controls="lab" data-view-target="lab" tabindex="-1"><span class="dock-index">02</span><span>Инструменты</span></button>
+    <button class="dock-tab" type="button" role="tab" id="tab-principles" aria-selected="false" aria-controls="principles" data-view-target="principles" tabindex="-1"><span class="dock-index">03</span><span>Правила</span></button>
+    <button class="dock-tab" type="button" role="tab" id="tab-author" aria-selected="false" aria-controls="author" data-view-target="author" tabindex="-1"><span class="dock-index">04</span><span>Автор</span></button>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <a class="footer-wordmark" href="#top" data-view-target="home">SECHUB<span>®</span></a>
+      <p>Образование — да. Несанкционированный доступ — нет.</p>
+      <div class="footer-right"><a href="#principles" data-view-target="principles">Правила</a><span>© <span id="current-year">2026</span></span></div>
+    </div>
+  </footer>
+</body>
+</html>
